@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <TextView android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/texto_suave" android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:text="Venta"
+        android:textColor="@color/texto_suave" android:textSize="11sp" />
+
+    <TextView android:id="@+id/tvVenta"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/primario" android:textSize="26sp" android:textStyle="bold" />
+
+    <TextView android:id="@+id/tvCompra"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/texto" android:textSize="13sp" />
+
+    <TextView android:id="@+id/tvFecha"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/texto_suave" android:textSize="11sp" />
+</LinearLayout>

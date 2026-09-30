@@ -1,0 +1,9 @@
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/primario</item>
+        <item name="android:colorPrimaryDark">@color/primario_oscuro</item>
+        <item name="android:colorAccent">@color/primario</item>
+        <item name="android:statusBarColor">@color/primario_oscuro</item>
+        <item name="android:windowBackground">@color/fondo</item>
+    </style>
+</resources>

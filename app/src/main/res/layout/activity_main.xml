@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Dólar en Bolivia"
+        android:textColor="@color/texto" android:textSize="22sp" android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:orientation="horizontal">
+
+        <include android:id="@+id/cardOficial"
+            layout="@layout/card_cotizacion"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp" android:layout_weight="1" />
+
+        <include android:id="@+id/cardBinance"
+            layout="@layout/card_cotizacion"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginStart="6dp" android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical" android:orientation="horizontal">
+
+        <ProgressBar android:id="@+id/progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView android:id="@+id/tvEstado"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginStart="8dp" android:layout_weight="1"
+            android:textColor="@color/texto" android:textSize="13sp" />
+
+        <Button android:id="@+id/btnActualizar"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Actualizar" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvAuto"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/texto_suave" android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:text="Histórico"
+        android:textColor="@color/texto" android:textSize="16sp" android:textStyle="bold" />
+
+    <ListView android:id="@+id/lvHistorial"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:divider="@color/borde" android:dividerHeight="1dp" />
+
+    <TextView android:id="@+id/tvVacio"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:gravity="center"
+        android:text="Todavía no hay registros"
+        android:textColor="@color/texto_suave" />
+</LinearLayout>

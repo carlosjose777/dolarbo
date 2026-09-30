@@ -1,0 +1,8 @@
+<resources>
+    <color name="primario">#1B6B4F</color>
+    <color name="primario_oscuro">#124A37</color>
+    <color name="fondo">#F4F6F5</color>
+    <color name="texto">#1C2321</color>
+    <color name="texto_suave">#6B7672</color>
+    <color name="borde">#E1E6E4</color>
+</resources>
